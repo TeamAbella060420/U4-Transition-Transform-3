@@ -29,20 +29,31 @@
 /* -- Row 1 --------- */
 img {
 	transition: transform .5s;
-	transform-origin: 0 0;
+	transform-origin: center;
 }
 img:hover {
 	transform: scale(1.1);
 }
 
 /* -- Row 2 --------- */
-
-
+.photo img {
+	transform-origin: 0 0;
+}
+.photo:hover img {
+	transform: scale(1.1)
+}
 
 /* -- Row 3 --------- */
-
-
-
+.slide .photo-overlay,
+.slide img {
+	transition: transform .6s;
+}
+.slide .photo-overlay {
+	transform: translatex(-100%);
+}
+.slide:hover .photo-overlay {
+	transform: translatex(0)
+}
 /* -- Logo ---------- */
 
 .logo:hover {
